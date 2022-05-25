@@ -133,6 +133,7 @@
 
 # Игра Угадайка 2
 
+
 # import time
 # import random
 # from random import randint
@@ -141,7 +142,9 @@
 # print('Напишите число от 1 до 100. Компьютер попробует его отгадать ')
 # answer = int(input())
 # count = 1
-# ibm_answer = randint(1,101)
+# min = 1
+# max = 101
+# ibm_answer = randint(min,max)
 # while True:
 #     if(ibm_answer==answer):
 #         print(ibm_answer)
@@ -154,9 +157,11 @@
 #         time.sleep(0.1)
 
 #         if(ibm_answer<answer):
-#             ibm_answer = randint(1,answer)
+#             min = ibm_answer
+#             ibm_answer = randint(min,max)
 #         else: 
-#             ibm_answer = randint(answer,101)
+#             max = ibm_answer
+#             ibm_answer = randint(min,max)
 
         
 # Квест
